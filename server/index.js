@@ -10,7 +10,7 @@ const cors = require("cors");
 
 
  
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect('mongodb+srv://Jimmy:50623@cluster0.ybvimf6.mongodb.net/?retryWrites=true&w=majority')
 .then(_=> console.log("connection successful"))
 .catch(err=> console.log("database connection fail"))
 
